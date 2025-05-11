@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>JavaScript</h1>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sibling Traversal</title>
+  </head>
+  <body>
+    <ul id="fruitsList">
+      <li id="fruits1">Apple</li>
+      <li id="fruits2">Mango</li>
+      <li id="fruits3">Grapes</li>
+      <li id="fruits4">Cherry</li>
+      <li id="fruits5">Cucumber</li>
+    </ul>
+
+    <script>
+      //Append child
+      const append = document.querySelector("ul");
+      const appendContent = document.createElement("li");
+      appendContent.textContent = "Onion";
+      append.appendChild(appendContent);
+    </script>
+  </body>
 </html>
